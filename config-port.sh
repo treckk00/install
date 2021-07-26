@@ -2,21 +2,23 @@
 
 echo "* Puertos Configurados."
 apt install ufw
-sleep 2
+process_id=$!
+
 ufw allow 22
-sleep 2
+wait $process_id
 ufw allow 80
-sleep 2
+wait $process_id
 ufw allow 8080
-sleep 2
+wait $process_id
 ufw allow 443
-sleep 2
+wait $process_id
 ufw allow 30120
-sleep 2
+wait $process_id
 ufw allow 40120
-sleep 2
+wait $process_id
 ufw allow 3306
-sleep 2
+wait $process_id
 ufw allow 2022
-sleep 2
+process_id=$!
+wait $process_id
 ufw enable
