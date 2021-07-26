@@ -8,7 +8,7 @@ fi
 if [ ! -f "artisan" ]; then
     echo "We tried to find your Artisan file but we couldnt, Please move to the directory you installed the Panel and re-run this script. Have a Good Day!"
     cd /var/www/pterodactyl
-    else
+fi
 
     echo "Your Artisan File has been found!"
     sleep 2
@@ -33,4 +33,3 @@ if [ ! -f "artisan" ]; then
 
     echo "Complete! Have a good day and dont forget to refresh your browser cache! (CTRL + F5)"
     echo "-Will"
-fi
