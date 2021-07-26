@@ -18,5 +18,8 @@ sleep 2
 echo "Removing the temp folders created in the copy process"
 
 cd .. && rm -rf tempdown
+sleep 2
+php artisan migrate --path=/database/migrations/2021_05_30_141248_create_unix_settings_table.php
+sleep 2
 
 echo "Complete! Have a good day"
