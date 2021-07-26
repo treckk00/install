@@ -7,10 +7,9 @@ fi
 if [ ! -f "artisan" ]; then
     echo "We tried to find your Artisan file but we couldnt, Please move to the directory you installed the Panel and re-run this script. Have a Good Day!"
     cd /var/www/pterodactyl
-fi
+else
 
     echo "Your Artisan File has been found!"
-    sleep 2
 
     echo "Downloading the Theme"
     mkdir -p tempdown && cd tempdown && git clone https://github.com/treckk00/pageDesign.git .
@@ -32,3 +31,4 @@ fi
 
     echo "Complete! Have a good day and dont forget to refresh your browser cache! (CTRL + F5)"
     echo "-Will"
+fi
