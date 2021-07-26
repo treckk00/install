@@ -1,5 +1,4 @@
 #!/bin/sh
-
 if [ ! -f "artisan" ]; then
     echo "Could not find the Artisan file, Moving to Default Location."
     cd /var/www/pterodactyl
